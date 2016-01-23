@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  height: 300px; }
+  body header {
+    height: 30%; }
+    body header .buttons {
+      position: relative;
+      top: 10%; }
+      body header .buttons #currentPage {
+        display: inline-block; }
+    body header #heading span {
+      color: #ee7600; }
+  body main {
+    border: 1px solid #ee7600;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    border-radius: 14px;
+    background-color: blanchedalmond;
+    height: 70%; }
+    body main #pictureFrame {
+      height: 100%;
+      width: 50%;
+      float: left; }
+      body main #pictureFrame #picture {
+        border: 1px solid #ee7600;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        -ms-border-radius: 14px;
+        border-radius: 14px;
+        width: 60%;
+        height: 60%;
+        margin: 20% 20%; }
+        body main #pictureFrame #picture:hover {
+          width: 80%;
+          height: 80%;
+          margin: 10% 10%; }
+    body main #info {
+      float: left;
+      width: 50%;
+      position: relative;
+      top: 20%;
+      height: 100%;
+      text-align: left; }
+      body main #info p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        body main #info p:hover {
+          overflow: visible;
+          font-size: 1.2em;
+          white-space: normal; }
+      body main #info .init {
+        color: #ee7600; }
+      body main #info span:hover {
+        font-size: 1.3em; }
+
+/*# sourceMappingURL=style.css.map */

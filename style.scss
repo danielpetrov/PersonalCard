@@ -1,0 +1,79 @@
+$borderColor: #ee7600;
+$borderRadius: 14px;
+$mainBackgroundColor: blanchedalmond;
+@mixin border-orange-and-curly($borderRadius) {
+  border: 1px solid $borderColor;
+  -webkit-border-radius: $borderRadius;
+  -moz-border-radius: $borderRadius;
+  -ms-border-radius: $borderRadius;
+  border-radius: $borderRadius;
+}
+
+body{
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  height: 300px;
+  header{
+    height: 30%;
+    .buttons{
+      position: relative;
+      top: 10%;
+      #currentPage{
+        display: inline-block;
+      }
+    }
+    #heading{
+      span{
+        color: $borderColor;
+      }
+    }
+  }
+  main{
+    @include border-orange-and-curly($borderRadius);
+    background-color: $mainBackgroundColor;
+    height: 70%;
+    #pictureFrame{
+      height: 100%;
+      width: 50%;
+      float: left;
+      #picture{
+        @include border-orange-and-curly($borderRadius);
+        width: 60%;
+        height: 60%;
+        margin: 20% 20%;
+        &:hover{
+          width: 80%;
+          height: 80%;
+          margin: 10% 10%;
+        }
+      }
+    }
+    #info{
+      p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover{
+          overflow: visible;
+          font-size: 1.2em;
+          white-space: normal;
+        }
+      }
+      float:left;
+      width: 50%;
+      position: relative;
+      top: 20%;
+      height: 100%;
+      text-align: left;
+      .init{
+        color: $borderColor;
+      }
+      span{
+        &:hover{
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
